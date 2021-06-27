@@ -13,14 +13,11 @@ Modern technology like the google assistant and Apple Siri are only capable of r
 3. The user then taps the mike to talk to the assistant, which gets converted to text by inbuilt google **speech-to-text**.
 4. The text along with the age chosen and a unique user_id will be sent to the firebase database.
 5. Flask server actively running on a Google Cloud Virtual Machine will keep listening for changes in the database.
-6. The json object is retrieved from the database calls the python script which has 4 functions:
-       - Scrape the image of a person-who-does-not-exist depending on the age selected by the user
-       - Run the text through a conversational model that uses State of the Art deep learning architecture 
-          Transformers to get responses the user input
-       - Google text to speech model that converts model outputs to speech
-       - The audio file along with the photo of the previously selected image sent to a Wav2lip Model. 
-          Wav2Lip is a State of the Art deep learning model for Lip Sync, which takes an image and an 
-          audio file and returns a video of the person lip-syncing to the audio.
+6. The json object is retrieved from the database calls the python script which has 4 functions<br>
+       1. Scrape the image of a person-who-does-not-exist depending on the age selected by the user<br>
+       2. Run the text through a conversational model that uses State of the Art deep learning architecture Transformers to get responses the user input<br>
+       3. Google text to speech model that converts model outputs to speech<br>
+       4. The audio file along with the photo of the previously selected image sent to a Wav2lip Model. Wav2Lip is a State of the Art deep learning model for Lip Sync, which takes an image and an audio file and returns a video of the person lip-syncing to the audio.<br>
 7. The video is sent back to the app that displays it on the screen.
 
 ## Challenges we ran into
