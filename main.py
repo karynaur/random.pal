@@ -34,5 +34,5 @@ def main(sentence):
   inference.main(args)
   os.remove(path + '/audio.wav')
   if os.path.exists(path + '/result.mp4'):
-      return "SUCESS"
+      return path + '/result.mp4'
   return "FAIL"
